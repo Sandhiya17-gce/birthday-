@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #text {
+      font-size: 24px;
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text"></div>
+
+<script>
+  const message = "Happy Birthday MAMA You are My Love forever my life ❤️🎂\n\n" +
+                  "India-la irundhaalum,\n" +
+                  "Dubai-la irundhaalum,\n" +
+                  "En heart eppovume un pakkathula thaan 🫂\n\n" +
+                  "Distance temporary daa,\n" +
+                  "Aana en love permanent 💖\n\n" +
+                  "Miss you so much 😘";
+
+  let i = 0;
+  function typeEffect() {
+    if (i < message.length) {
+      document.getElementById("text").innerHTML +=
+        message.charAt(i) === "\n" ? "<br>" : message.charAt(i);
+      i++;
+      setTimeout(typeEffect, 70);
+    }
+  }
+  typeEffect();
+</script>
+
+</body>
+</html>
+    
